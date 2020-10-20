@@ -1,0 +1,790 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+  <androidx.core.widget.NestedScrollView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+      <androidx.appcompat.widget.AppCompatImageView
+          android:id="@+id/palpel_image"
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:src="@drawable/palpel"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          >
+
+      </androidx.appcompat.widget.AppCompatImageView>
+
+      <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/plapel_question1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="15dp"
+          app:layout_constraintLeft_toLeftOf="@id/palpel_image"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          android:text="who is the singer?"
+          >
+      </androidx.appcompat.widget.AppCompatTextView>
+
+      <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/plapel_question2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="25dp"
+          app:layout_constraintLeft_toLeftOf="@id/palpel_image"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toTopOf="@id/plapel_question1"
+          android:text="age?"
+          >
+      </androidx.appcompat.widget.AppCompatTextView>
+
+      <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/plapel_question3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="25dp"
+          app:layout_constraintLeft_toLeftOf="@id/palpel_image"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toTopOf="@id/plapel_question2"
+          android:text="num of children?"
+          >
+      </androidx.appcompat.widget.AppCompatTextView>
+
+      <androidx.appcompat.widget.AppCompatEditText
+          android:id="@+id/plapel_name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="100dp"
+          app:layout_constraintLeft_toLeftOf="@id/plapel_question1"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          android:hint="name"
+          android:textSize="14dp"
+          >
+      </androidx.appcompat.widget.AppCompatEditText>
+
+      <androidx.appcompat.widget.AppCompatEditText
+          android:id="@+id/plapel_age"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="25dp"
+          android:layout_marginLeft="50dp"
+          app:layout_constraintLeft_toLeftOf="@id/plapel_question2"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toTopOf="@id/plapel_name"
+          android:hint="0"
+          android:text="0"
+          android:textSize="14dp"
+          android:inputType="number"
+          android:digits="0123456789"
+          >
+      </androidx.appcompat.widget.AppCompatEditText>
+
+      <androidx.appcompat.widget.AppCompatEditText
+          android:id="@+id/plapel_children"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="25dp"
+          android:layout_marginLeft="85dp"
+          app:layout_constraintLeft_toLeftOf="@id/plapel_question3"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toTopOf="@id/plapel_age"
+          android:hint="0"
+          android:text="0"
+          android:textSize="14dp"
+          android:inputType="number"
+          android:digits="0123456789"
+          >
+      </androidx.appcompat.widget.AppCompatEditText>
+      <androidx.appcompat.widget.AppCompatImageView
+          android:id="@+id/rooster_image"
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:src="@drawable/rooster"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/palpel_image"
+          >
+
+      </androidx.appcompat.widget.AppCompatImageView>
+
+      <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/rooster_question1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="15dp"
+          app:layout_constraintLeft_toLeftOf="@id/rooster_image"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/palpel_image"
+          android:text="who is the singer?"
+          >
+      </androidx.appcompat.widget.AppCompatTextView>
+
+      <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/rooster_question2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="25dp"
+          app:layout_constraintTop_toBottomOf="@id/palpel_image"
+          app:layout_constraintLeft_toLeftOf="@id/rooster_image"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toTopOf="@id/rooster_question1"
+          android:text="age?"
+          >
+      </androidx.appcompat.widget.AppCompatTextView>
+
+      <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/rooster_question3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="25dp"
+          app:layout_constraintLeft_toLeftOf="@id/rooster_image"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toTopOf="@id/rooster_question2"
+          android:text="num of children?"
+          >
+      </androidx.appcompat.widget.AppCompatTextView>
+      <androidx.appcompat.widget.AppCompatEditText
+          android:id="@+id/rooster_name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="100dp"
+          app:layout_constraintLeft_toLeftOf="@id/rooster_question1"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/palpel_image"
+          android:hint="name"
+          android:textSize="14dp"
+          >
+      </androidx.appcompat.widget.AppCompatEditText>
+
+      <androidx.appcompat.widget.AppCompatEditText
+          android:id="@+id/rooster_age"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="25dp"
+          android:layout_marginLeft="50dp"
+          app:layout_constraintTop_toBottomOf="@id/palpel_image"
+          app:layout_constraintLeft_toLeftOf="@id/rooster_question2"
+          app:layout_constraintRight_toRightOf="parent"
+          android:hint="0"
+          android:text="0"
+          android:textSize="14dp"
+          android:inputType="number"
+          android:digits="0123456789"
+          >
+      </androidx.appcompat.widget.AppCompatEditText>
+
+      <androidx.appcompat.widget.AppCompatEditText
+          android:id="@+id/rooster_children"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="25dp"
+          android:layout_marginLeft="85dp"
+          app:layout_constraintLeft_toLeftOf="@id/rooster_question3"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toTopOf="@id/rooster_age"
+          android:hint="0"
+          android:text="0"
+          android:textSize="14dp"
+          android:inputType="number"
+          android:digits="0123456789"
+          >
+      </androidx.appcompat.widget.AppCompatEditText>
+
+      <androidx.appcompat.widget.AppCompatImageView
+          android:id="@+id/yael_image"
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:src="@drawable/yael"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/rooster_image"
+          >
+
+      </androidx.appcompat.widget.AppCompatImageView>
+
+      <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/yael_question1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="15dp"
+          app:layout_constraintLeft_toLeftOf="@id/yael_image"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/rooster_image"
+          android:text="who is the singer?"
+          >
+      </androidx.appcompat.widget.AppCompatTextView>
+
+      <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/yael_question2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="25dp"
+          app:layout_constraintTop_toBottomOf="@id/rooster_image"
+          app:layout_constraintLeft_toLeftOf="@id/yael_image"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toTopOf="@id/yael_question1"
+          android:text="age?"
+          >
+      </androidx.appcompat.widget.AppCompatTextView>
+
+      <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/yael_question3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="25dp"
+          app:layout_constraintLeft_toLeftOf="@id/yael_image"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toTopOf="@id/yael_question2"
+          android:text="num of children?"
+          >
+      </androidx.appcompat.widget.AppCompatTextView>
+      <androidx.appcompat.widget.AppCompatEditText
+          android:id="@+id/yael_name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="100dp"
+          app:layout_constraintLeft_toLeftOf="@id/yael_question1"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/rooster_image"
+          android:hint="name"
+          android:textSize="14dp"
+          >
+      </androidx.appcompat.widget.AppCompatEditText>
+
+      <androidx.appcompat.widget.AppCompatEditText
+          android:id="@+id/yael_age"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="25dp"
+          android:layout_marginLeft="50dp"
+          app:layout_constraintTop_toBottomOf="@id/rooster_image"
+          app:layout_constraintLeft_toLeftOf="@id/yael_question2"
+          app:layout_constraintRight_toRightOf="parent"
+          android:hint="0"
+          android:text="0"
+          android:textSize="14dp"
+          android:inputType="number"
+          android:digits="0123456789"
+          >
+      </androidx.appcompat.widget.AppCompatEditText>
+
+      <androidx.appcompat.widget.AppCompatEditText
+          android:id="@+id/yael_children"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="25dp"
+          android:layout_marginLeft="85dp"
+          app:layout_constraintLeft_toLeftOf="@id/yael_question3"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toTopOf="@id/yael_age"
+          android:hint="0"
+          android:text="0"
+          android:textSize="14dp"
+          android:inputType="number"
+          android:digits="0123456789"
+          >
+      </androidx.appcompat.widget.AppCompatEditText>
+
+      <androidx.appcompat.widget.AppCompatImageView
+          android:id="@+id/dragon_image"
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:src="@drawable/dragon"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/yael_image"
+          >
+
+      </androidx.appcompat.widget.AppCompatImageView>
+
+      <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/dragon_question1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="15dp"
+          app:layout_constraintLeft_toLeftOf="@id/dragon_image"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/yael_image"
+          android:text="who is the singer?"
+          >
+      </androidx.appcompat.widget.AppCompatTextView>
+
+      <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/dragon_question2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="25dp"
+          app:layout_constraintTop_toBottomOf="@id/yael_image"
+          app:layout_constraintLeft_toLeftOf="@id/dragon_image"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toTopOf="@id/dragon_question1"
+          android:text="age?"
+          >
+      </androidx.appcompat.widget.AppCompatTextView>
+
+      <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/dragon_question3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="25dp"
+          app:layout_constraintLeft_toLeftOf="@id/dragon_image"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toTopOf="@id/dragon_question2"
+          android:text="num of children?"
+          >
+      </androidx.appcompat.widget.AppCompatTextView>
+      <androidx.appcompat.widget.AppCompatEditText
+          android:id="@+id/dragon_name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="100dp"
+          app:layout_constraintLeft_toLeftOf="@id/dragon_question1"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/yael_image"
+          android:hint="name"
+          android:textSize="14dp"
+          >
+      </androidx.appcompat.widget.AppCompatEditText>
+
+      <androidx.appcompat.widget.AppCompatEditText
+          android:id="@+id/dragon_age"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="25dp"
+          android:layout_marginLeft="50dp"
+          app:layout_constraintTop_toBottomOf="@id/yael_image"
+          app:layout_constraintLeft_toLeftOf="@id/dragon_question2"
+          app:layout_constraintRight_toRightOf="parent"
+          android:hint="0"
+          android:text="0"
+          android:textSize="14dp"
+          android:inputType="number"
+          android:digits="0123456789"
+          >
+      </androidx.appcompat.widget.AppCompatEditText>
+
+      <androidx.appcompat.widget.AppCompatEditText
+          android:id="@+id/dragon_children"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="25dp"
+          android:layout_marginLeft="85dp"
+          app:layout_constraintLeft_toLeftOf="@id/dragon_question3"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toTopOf="@id/dragon_age"
+          android:hint="0"
+          android:text="0"
+          android:textSize="14dp"
+          android:inputType="number"
+          android:digits="0123456789"
+          >
+      </androidx.appcompat.widget.AppCompatEditText>
+      <androidx.appcompat.widget.AppCompatImageView
+          android:id="@+id/pickle_image"
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:src="@drawable/pickle"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/dragon_image"
+          >
+
+      </androidx.appcompat.widget.AppCompatImageView>
+
+      <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/pickle_question1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="15dp"
+          app:layout_constraintLeft_toLeftOf="@id/pickle_image"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/dragon_image"
+          android:text="who is the singer?"
+          >
+      </androidx.appcompat.widget.AppCompatTextView>
+
+      <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/pickle_question2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="25dp"
+          app:layout_constraintTop_toBottomOf="@id/dragon_image"
+          app:layout_constraintLeft_toLeftOf="@id/pickle_image"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toTopOf="@id/pickle_question1"
+          android:text="age?"
+          >
+      </androidx.appcompat.widget.AppCompatTextView>
+
+      <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/pickle_question3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="25dp"
+          app:layout_constraintLeft_toLeftOf="@id/pickle_image"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toTopOf="@id/pickle_question2"
+          android:text="num of children?"
+          >
+      </androidx.appcompat.widget.AppCompatTextView>
+
+      <androidx.appcompat.widget.AppCompatEditText
+          android:id="@+id/pickle_name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="100dp"
+          app:layout_constraintLeft_toLeftOf="@id/pickle_question1"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/dragon_image"
+          android:hint="name"
+          android:textSize="14dp"
+          >
+      </androidx.appcompat.widget.AppCompatEditText>
+
+      <androidx.appcompat.widget.AppCompatEditText
+          android:id="@+id/pickle_age"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="25dp"
+          android:layout_marginLeft="50dp"
+          app:layout_constraintTop_toBottomOf="@id/dragon_image"
+          app:layout_constraintLeft_toLeftOf="@id/pickle_question2"
+          app:layout_constraintRight_toRightOf="parent"
+          android:hint="0"
+          android:text="0"
+          android:textSize="14dp"
+          android:inputType="number"
+          android:digits="0123456789"
+          >
+      </androidx.appcompat.widget.AppCompatEditText>
+
+      <androidx.appcompat.widget.AppCompatEditText
+          android:id="@+id/pickle_children"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="25dp"
+          android:layout_marginLeft="85dp"
+          app:layout_constraintLeft_toLeftOf="@id/pickle_question3"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toTopOf="@id/pickle_age"
+          android:hint="0"
+          android:text="0"
+          android:textSize="14dp"
+          android:inputType="number"
+          android:digits="0123456789"
+          >
+      </androidx.appcompat.widget.AppCompatEditText>
+
+      <androidx.appcompat.widget.AppCompatImageView
+          android:id="@+id/safirit_image"
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:src="@drawable/safirit"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/pickle_image"
+          >
+
+      </androidx.appcompat.widget.AppCompatImageView>
+
+      <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/safirit_question1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="15dp"
+          app:layout_constraintLeft_toLeftOf="@id/safirit_image"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/pickle_image"
+          android:text="who is the singer?"
+          >
+      </androidx.appcompat.widget.AppCompatTextView>
+
+      <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/safirit_question2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="25dp"
+          app:layout_constraintTop_toBottomOf="@id/pickle_image"
+          app:layout_constraintLeft_toLeftOf="@id/safirit_image"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toTopOf="@id/safirit_question1"
+          android:text="age?"
+          >
+      </androidx.appcompat.widget.AppCompatTextView>
+
+      <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/safirit_question3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="25dp"
+          app:layout_constraintLeft_toLeftOf="@id/safirit_image"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toTopOf="@id/safirit_question2"
+          android:text="num of children?"
+          >
+      </androidx.appcompat.widget.AppCompatTextView>
+
+      <androidx.appcompat.widget.AppCompatEditText
+          android:id="@+id/safirit_name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="100dp"
+          app:layout_constraintLeft_toLeftOf="@id/safirit_question1"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/pickle_image"
+          android:hint="name"
+          android:textSize="14dp"
+          >
+      </androidx.appcompat.widget.AppCompatEditText>
+
+      <androidx.appcompat.widget.AppCompatEditText
+          android:id="@+id/safirit_age"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="25dp"
+          android:layout_marginLeft="50dp"
+          app:layout_constraintTop_toBottomOf="@id/pickle_image"
+          app:layout_constraintLeft_toLeftOf="@id/safirit_question2"
+          app:layout_constraintRight_toRightOf="parent"
+          android:hint="0"
+          android:text="0"
+          android:textSize="14dp"
+          android:inputType="number"
+          android:digits="0123456789"
+          >
+      </androidx.appcompat.widget.AppCompatEditText>
+
+      <androidx.appcompat.widget.AppCompatEditText
+          android:id="@+id/safirit_children"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="25dp"
+          android:layout_marginLeft="85dp"
+          app:layout_constraintLeft_toLeftOf="@id/safirit_question3"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toTopOf="@id/safirit_age"
+          android:hint="0"
+          android:text="0"
+          android:textSize="14dp"
+          android:inputType="number"
+          android:digits="0123456789"
+          >
+      </androidx.appcompat.widget.AppCompatEditText>
+
+      <androidx.appcompat.widget.AppCompatImageView
+          android:id="@+id/popcorn_image"
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:src="@drawable/popcorn"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/safirit_image"
+          >
+
+      </androidx.appcompat.widget.AppCompatImageView>
+
+      <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/popcorn_question1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="15dp"
+          app:layout_constraintLeft_toLeftOf="@id/popcorn_image"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/safirit_image"
+          android:text="who is the singer?"
+          >
+      </androidx.appcompat.widget.AppCompatTextView>
+
+      <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/popcorn_question2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="25dp"
+          app:layout_constraintTop_toBottomOf="@id/safirit_image"
+          app:layout_constraintLeft_toLeftOf="@id/popcorn_image"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toTopOf="@id/popcorn_question1"
+          android:text="age?"
+          >
+      </androidx.appcompat.widget.AppCompatTextView>
+
+      <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/popcorn_question3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="25dp"
+          app:layout_constraintLeft_toLeftOf="@id/popcorn_image"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toTopOf="@id/popcorn_question2"
+          android:text="num of children?"
+          >
+      </androidx.appcompat.widget.AppCompatTextView>
+
+      <androidx.appcompat.widget.AppCompatEditText
+          android:id="@+id/popcorn_name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="100dp"
+          app:layout_constraintLeft_toLeftOf="@id/popcorn_question1"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/safirit_image"
+          android:hint="name"
+          android:textSize="14dp"
+          >
+      </androidx.appcompat.widget.AppCompatEditText>
+
+      <androidx.appcompat.widget.AppCompatEditText
+          android:id="@+id/popcorn_age"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="25dp"
+          android:layout_marginLeft="50dp"
+          app:layout_constraintTop_toBottomOf="@id/safirit_image"
+          app:layout_constraintLeft_toLeftOf="@id/popcorn_question2"
+          app:layout_constraintRight_toRightOf="parent"
+          android:hint="0"
+          android:text="0"
+          android:textSize="14dp"
+          android:inputType="number"
+          android:digits="0123456789"
+          >
+      </androidx.appcompat.widget.AppCompatEditText>
+
+      <androidx.appcompat.widget.AppCompatEditText
+          android:id="@+id/popcorn_children"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="25dp"
+          android:layout_marginLeft="85dp"
+          app:layout_constraintLeft_toLeftOf="@id/popcorn_question3"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toTopOf="@id/popcorn_age"
+          android:hint="0"
+          android:text="0"
+          android:textSize="14dp"
+          android:inputType="number"
+          android:digits="0123456789"
+          >
+      </androidx.appcompat.widget.AppCompatEditText>
+
+      <androidx.appcompat.widget.AppCompatImageView
+          android:id="@+id/hasida_image"
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:src="@drawable/hasida"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/popcorn_image"
+          >
+
+      </androidx.appcompat.widget.AppCompatImageView>
+
+      <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/hasida_question1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="15dp"
+          app:layout_constraintLeft_toLeftOf="@id/hasida_image"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/popcorn_image"
+          android:text="who is the singer?"
+          >
+      </androidx.appcompat.widget.AppCompatTextView>
+
+      <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/hasida_question2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="25dp"
+          app:layout_constraintTop_toBottomOf="@id/popcorn_image"
+          app:layout_constraintLeft_toLeftOf="@id/hasida_image"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toTopOf="@id/hasida_question1"
+          android:text="age?"
+          >
+      </androidx.appcompat.widget.AppCompatTextView>
+
+      <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/hasida_question3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="25dp"
+          app:layout_constraintLeft_toLeftOf="@id/hasida_image"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toTopOf="@id/hasida_question2"
+          android:text="num of children?"
+          >
+      </androidx.appcompat.widget.AppCompatTextView>
+
+      <androidx.appcompat.widget.AppCompatEditText
+          android:id="@+id/hasida_name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="14dp"
+          android:layout_marginLeft="100dp"
+          app:layout_constraintLeft_toLeftOf="@id/hasida_question1"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/popcorn_image"
+          android:hint="name"
+          >
+      </androidx.appcompat.widget.AppCompatEditText>
+
+      <androidx.appcompat.widget.AppCompatEditText
+          android:id="@+id/hasida_age"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="25dp"
+          android:layout_marginLeft="50dp"
+          app:layout_constraintTop_toBottomOf="@id/popcorn_image"
+          app:layout_constraintLeft_toLeftOf="@id/hasida_question2"
+          app:layout_constraintRight_toRightOf="parent"
+          android:hint="0"
+          android:text="0"
+          android:textSize="14dp"
+          android:inputType="number"
+          android:digits="0123456789"
+          >
+      </androidx.appcompat.widget.AppCompatEditText>
+
+
+      <androidx.appcompat.widget.AppCompatEditText
+          android:id="@+id/hasida_children"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="25dp"
+          android:layout_marginLeft="85dp"
+          app:layout_constraintLeft_toLeftOf="@id/hasida_question3"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toTopOf="@id/hasida_age"
+          android:hint="0"
+          android:text="0"
+          android:textSize="14dp"
+          android:inputType="number"
+          android:digits="0123456789"
+          >
+      </androidx.appcompat.widget.AppCompatEditText>
+
+      <androidx.appcompat.widget.AppCompatButton
+          android:id="@+id/check"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:layout_marginLeft="150dp"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/hasida_image"
+          android:text="check"
+          android:background="@color/colorAccent"
+          >
+
+      </androidx.appcompat.widget.AppCompatButton>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+  </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

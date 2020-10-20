@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name='singer_in_a_mask'
